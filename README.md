@@ -1,5 +1,5 @@
 # Portfolio
-Portfolio Website using GitHub Pages.
+My dynamic Portfolio Website and is hosted using GitHub Pages.
 
 ### Click below to view my portfolio website
 [Click Here](https://harshitruwali.github.io/Portfolio)
