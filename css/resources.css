@@ -8,6 +8,12 @@ body {
 h3 {
   color: black;
 }
+h2{
+	color: black;
+}
+p{
+	color: black;
+}
 a {
  -webkit-transition: .25s all;
  transition: .25s all;
