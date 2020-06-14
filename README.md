@@ -1,5 +1,5 @@
 # Portfolio
-My dynamic Portfolio Website and is hosted using GitHub Pages.
+My Portfolio Website hosted using GitHub Pages.
 
 ### Click below to view my portfolio website
 
