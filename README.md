@@ -1,7 +1,7 @@
-# Portfolio
-My Portfolio Website hosted using GitHub Pages.
+# harshitruwali.github.io
+My Website hosted using GitHub Pages.
 
-### Click below to view my portfolio website
+### Click below to view my website
 
 <p align="center"> 
   <kbd>
