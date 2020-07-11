@@ -5,8 +5,8 @@ My Website hosted using GitHub Pages.
 
 <p align="center"> 
   <kbd>
-  	<a href="https://harshitruwali.github.io/Portfolio/" target="_blank">
-		<img src="sample.png"></img>
+  	<a href="https://harshitruwali.github.io/" target="_blank">
+		<img src="img.png"></img>
 	</a>
   </kbd>
 </p>
