@@ -62,7 +62,7 @@
                 Prefer to use Tensorflow and Keras for Deep Learning and Node.js and MongoDB for Web-Apps. Also uses Google Firebase and AWS if required.
                 <br>You may see all my certificates in my <a href="https://www.linkedin.com/in/harshitruwali/">Linkedin proflie</a>. <br>
                 Download my <a href="resources/Resume.pdf" target="_blank" download="Resume-Harshit-Ruwali.pdf">Resume</a>.<br>
-                Download my <a href="resources/Harshit Ruwali (325A6F7A) – Public.asc" target="_blank" download="Harshit Ruwali (325A6F7A) – Public.asc">Public PGP Key</a>.
+                Download my <a href="resources/Harshit Ruwali (325A6F7A) – Public.asc" target="_blank" download="Harshit Ruwali (325A6F7A) – Public.asc">Public GPG Key</a>.
 
             </p>
             </div>
@@ -211,7 +211,9 @@
                         <div class="container">
                             <div class="row">
                                 <script type="text/javascript">
-                                    var domains = ["Rock OS",
+                                    var domains = [
+                                    "Personalized Voice Assistant",
+                                    "Rock OS",
                                     "Covid-19 Detection",    
                                     "Traffic Sign Recognition",
                                     "Flash Chat",
@@ -221,8 +223,9 @@
                                     "H4X0R News"
                                     ];
                                     var ppDomains = [
-                                    "OS made using Rust.",
-                                    "A Deep-Learning Project using CNN and transfer learning with the VGG16 model to detect COVID-19 in the person with having accuracy of 97.50% based on the x-ray of the chest of the person.",
+                                        "Give personalized results based on the user's voice recognition, trained using Neural Net.",
+                                        "OS made using Rust.",
+                                        "A Deep-Learning Project using CNN and transfer learning with the VGG16 model to detect COVID-19 in the person with having accuracy of 97.50% based on the x-ray of the chest of the person.",
                                         "Recognises 43 different traffic signs in the road. A convolutional neural network application. And have accuracy of 94.45%.",
                                         "An iOS one is to one chatting application using the Google Firebase as the main database.",
                                         "An application that functions on your voice input and does most of the things like getting news, telling the weather, plays a video from YouTube and mainly does a Google Search.",
@@ -231,7 +234,9 @@
                                         "An iOS/ MacOS/ iPadOS news app which fetch current trending tech news from web, made using the whole new SwiftUI.Since the app uses the UIKIT, you can literally build and run the app on your iPhone or Mac or iPad, just by checking up a couple of check boxes."
                                         ];
 
-                                    var urls = ["https://github.com/HarshitRuwali/Rock_OS",
+                                    var urls = [
+                                    "https://github.com/SkyDocs/",
+                                    "https://github.com/HarshitRuwali/Rock_OS",
                                     "https://github.com/HarshitRuwali/COVID-19_Detection",
                                     "https://github.com/HarshitRuwali/Traffic-Sign-Recognition",
                                     "https://github.com/HarshitRuwali/Flash-Chat-iOS13",
@@ -240,22 +245,21 @@
                                     "https://github.com/HarshitRuwali/Recommendation_Engine",
                                     "https://github.com/HarshitRuwali/H4X0R-News"
                                     ];
-                            var icons = ["desktop","ambulance", "car", "comment", "microphone", "camera", "user", "line-chart"]; 
-                            for (let i = 0; i < domains.length; i++) {
-                                var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
-                                document.write(
-                                    '<div class="col-md-12 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                                    <a href="' + urls[i] + '" target="_blank">\
-                                    <div class="services color-' + (i + 1) + '">\
-                                    <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
-                                    <h3>' + domains[i] + '</h3>\
-                                    <p>' + ppDomains[i] + '</p>\
-                                    </div>\
-                                    </a>\
-                                    </div>'
+                                var icons = ["microphone", "desktop","ambulance", "car", "comment", "microphone", "camera", "user", "line-chart"]; 
+                                for (let i = 0; i < domains.length; i++) {
+                                    var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
+                                    document.write(
+                                        '<div class="col-md-12 animate-box" data-animate-effect="fadeIn' + dir + '">\
+                                        <a href="' + urls[i] + '" target="_blank">\
+                                        <div class="services color-' + (i + 1) + '">\
+                                        <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
+                                        <h3>' + domains[i] + '</h3>\
+                                        <p>' + ppDomains[i] + '</p>\
+                                        </div>\
+                                        </a>\
+                                        </div>'
                                     );
-                            }
-
+                                }
                         </script>
                     </div>
                 </div>
