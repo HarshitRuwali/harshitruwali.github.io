@@ -6,6 +6,3 @@ $(document).ready(function(){
         return false;
     });
 });
-
-// inspired by 
-// https://dribbble.com/shots/920939-Portfolio-Redesign-2013-early-stage?list=searches&tag=portfolio&offset=22
