@@ -33,6 +33,21 @@
 
 </head>
 <body>
+	<noscript>
+		<h3 id="javascript-disabled">JavaScript is disabled! Enable JavaScript to see the complete page.</h3>
+		<style>
+			#javascript-disabled {
+				text-align: center;
+				padding: 5px;
+				color: #888;
+			}
+    	    #about {display:none;}
+    	    #project {display:none;}
+    	    #skills {display:none;}
+    	    #experience {display:none;}
+    	    #project {display:none;}
+	    </style>
+	</noscript>
 	<div class="header">
         <div class="fixed-content">
             <img alt="Harshit Ruwali" class="port" src="img/pic01.jpg">
@@ -63,7 +78,7 @@
             </div>
         </div>
 
-    <section class="colorlib-about" data-section="about">
+    <section class="colorlib-about" data-section="about" id="about">
         <div class="container">
             <div class="row">
                 <script type="text/javascript">
@@ -92,10 +107,7 @@
         </div>
     </section>
 
-    <br>
-    <br>
-
-    <section class="colorlib-skills" data-section="skills">
+    <section class="colorlib-skills" data-section="skills" id="skills">
         <div class="colorlib-narrow-content">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -133,10 +145,7 @@
             </div>
         </section>
 
-        <br>
-        <br>
-
-        <section class="colorlib-experience" data-section="experience">
+        <section class="colorlib-experience" data-section="experience" id="experience">
             <div class="colorlib-narrow-content">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -195,7 +204,7 @@
                 <div>
                 </section>
 
-                <section class="colorlib-project" data-section="project">
+                <section class="colorlib-project" data-section="project" id="project">
                     <div class="colorlib-narrow-content">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
