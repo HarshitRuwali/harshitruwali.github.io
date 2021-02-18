@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: harshitruwali.github.io
+Token: 8e3f3ee6d3f648e1ee330d3754b7805dac1d0bba8d62957438b8fb86b6d37a91
