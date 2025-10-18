@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Harshit Ruwali's iOS Apps</title>
-    <meta charset="utf-8" name = "description" content="Harshit Ruwali's iOS app Projects.">
+    <title>Harshit Ruwali | Backend Engineer & DevOps</title>
+    <meta charset="utf-8" name = "description" content="Harshit Ruwali - Backend Engineer specializing in DevOps and ETL applications.">
     <link rel="apple-touch-icon" sizes="180x180" href="img/ios/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/ios/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/ios/favicon-16x16.png">
@@ -19,35 +19,201 @@
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <!-- Auto-redirect to main page -->
+    <script>
+        window.location.href = "index.html";
+    </script>
 </head>
 
 <body>
-    <noscript>
-        <h3 id="javascript-disabled">JavaScript is disabled! Enable JavaScript to see the complete page.</h3>
-        <style>
-            #javascript-disabled {
-                text-align: center;
-                padding: 5px;
-                color: #888;
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">sp00fexpl01t</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deep-learning.html">Deep Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="course-solutions.html">Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Redirect Message Section -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        <span class="glow-text">Portfolio Focus</span> has <span class="glow-text">Shifted</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Now specializing in backend development, DevOps, and data engineering solutions.
+                    </p>
+                    <div class="redirect-message" data-aos="fade-up" data-aos-delay="200">
+                        <p class="redirect-text">
+                            You will be automatically redirected to the updated portfolio in a few seconds.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">
+                            <i class="fa fa-home"></i> View Current Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Focus Section -->
+        <section class="section" id="current-focus">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Current Expertise Areas</h2>
+                <div class="focus-grid">
+                    <div class="focus-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="focus-icon">
+                            <i class="fa fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Building robust APIs, microservices, and server-side applications</p>
+                        <ul class="focus-skills">
+                            <li>Node.js & Express</li>
+                            <li>RESTful APIs</li>
+                            <li>Database Design</li>
+                            <li>Authentication Systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="focus-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="focus-icon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <h3>DevOps & Infrastructure</h3>
+                        <p>Streamlining deployment, monitoring, and infrastructure management</p>
+                        <ul class="focus-skills">
+                            <li>Docker & Containerization</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Cloud Platforms</li>
+                            <li>Infrastructure as Code</li>
+                        </ul>
+                    </div>
+
+                    <div class="focus-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="focus-icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+                        <h3>Data Engineering & ETL</h3>
+                        <p>Processing, transforming, and managing large-scale data workflows</p>
+                        <ul class="focus-skills">
+                            <li>ETL Pipelines</li>
+                            <li>Data Processing</li>
+                            <li>Pipeline Automation</li>
+                            <li>Data Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Particles
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: 800 } },
+                color: { value: "#00ff9f" },
+                shape: { type: "circle" },
+                opacity: { value: 0.4, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#00ff9f",
+                    opacity: 0.3,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Loading screen
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style.display = 'none';
+        });
+
+        // Auto-redirect countdown
+        let countdown = 5;
+        const redirectText = document.querySelector('.redirect-text');
+        
+        function updateCountdown() {
+            if (countdown > 0) {
+                redirectText.innerHTML = `You will be automatically redirected to the updated portfolio in ${countdown} seconds.`;
+                countdown--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                window.location.href = "index.html";
             }
-            #about {display:none;}
-            #project {display:none;}
-            #skills {display:none;}
-            #experience {display:none;}
-            #project {display:none;}
-        </style>
-    </noscript>
-    <div class="header">
-        <div class="fixed-content">
-            <a href="index.html"> <img alt="Harshit Ruwali" class="port" src="img/pic01.jpg"> </a>
-            <a href="index.html"> <h1>Harshit Ruwali</h1> </a>
-            <h5>a.k.a. sp00fexpl01t<h5>
-            <p style="color:#fff;">Sony's Dreams To Reality Finalist | Deep Learning | Pen-Tester(Pro-Hacker@HackTheBox) | Full-Stack</p>
-            <div class="icon-row">
-                <a href="https://github.com/harshitruwali" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/harshitruwali/" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        }
+        
+        // Start countdown after page loads
+        window.addEventListener('load', function() {
+            setTimeout(updateCountdown, 2000);
+        });
+    </script>
+</body>
+</html>
                 <a href="https://stackoverflow.com/users/12245463/harshit-ruwali" title="Stack Overflow" target="_blank"><i class="fa fa-stack-overflow"></i></a>
                 <a href="https://www.quora.com/profile/Harshit-Ruwali" title="Quora" target="_blank"><i class="fa fa-quora"></i></a>
             </div>
@@ -133,7 +299,7 @@
                 <div class="icon-row blue">
                     <a href="https://t.me/harshitruwali" title="Message me on Telegram!" target="_blank"><i class="fa fa-telegram"></i></a>
                     <a href="mailto:ruwaliharshit@gmail.com" title="Mail me!" target="_blank"><i class="fa fa-envelope"></i></a>
-                    <a href="https://twitter.com/harshitruwali" title="Follow me on Twitter!" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://twitter.com/harshitruwali" title="Follow me on X/Twitter!" target="_blank"><i class="fa fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/harshitruwali/" title="Connect with me on Linkedin!" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div>
                 <i class="fa fa-chevron-up black" style="color:#000;"

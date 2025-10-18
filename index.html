@@ -11,7 +11,7 @@
 	  gtag('config', 'UA-161424619-1');
 	</script>
 
-	<title>Harshit Ruwali</title>
+	<title>Harshit Ruwali | sp00fexpl01t</title>
 	<meta charset="utf-8" name = "description" content="Final year Computer Science undergraduate. Deep Learning Enthusiast, Pentester and Full Stack Developer.">
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/index/apple-touch-icon.png">
@@ -27,12 +27,20 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="google-site-verification" content="bSyr0z4iYbF4K7fT7GemLYW-ZG6vR_SPQTMfMvOyIAM" />
 
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
 	<noscript>
 		<h3 id="javascript-disabled">JavaScript is disabled! Enable JavaScript to see the complete page.</h3>
 		<style>
@@ -42,270 +50,1047 @@
 				color: #888;
 			}
     	    #about {display:none;}
-    	    #project {display:none;}
     	    #skills {display:none;}
     	    #experience {display:none;}
-    	    #project {display:none;}
+    	    #projects {display:none;}
 	    </style>
 	</noscript>
-	<div class="header">
-        <div class="fixed-content">
-            <a href="index.html"> <img alt="Harshit Ruwali" class="port" src="img/pic01.jpg"> </a>
-            <a href="index.html"> <h1>Harshit Ruwali</h1> </a>
-            <h5>a.k.a. sp00fexpl01t<h5>
-            <p style="color:#fff;">Sony's Dreams To Reality Finalist | Deep Learning | Pen-Tester(Pro-Hacker@HackTheBox) | Full-Stack</p>
-            <div class="icon-row">
-                <a href="https://github.com/harshitruwali" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/harshitruwali/" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://stackoverflow.com/users/12245463/harshit-ruwali" title="Stack Overflow" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-                <a href="https://www.quora.com/profile/Harshit-Ruwali" title="Quora" target="_blank"><i class="fa fa-quora"></i></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home" data-scroll="home">
+                <span class="brand-text">sp00fexpl01t</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-scroll="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-scroll="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-scroll="skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-scroll="experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-scroll="projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog" data-scroll="blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-scroll="contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="second">
-        <div class="fixed-content">
-            <h2>About Me</h2>
-            <p>
-                Final year Computer Science undergraduate pursuing Bachelor of Engineering at Vellore Institute of Technology, Bhopal. <br>
-                
-                Initially started from Machine Learning to Deep Learning but now builds Web-Apps(front-end & back-end) and iOS apps too.<br>
-                Prefer to use Tensorflow and Keras for Deep Learning and Node.js for Web-Apps. <br>
-                Currently learing Pen-Testing(Penetration Testing).<br>
-                Finalist of <a href="https://www.linkedin.com/posts/sonyresearchindia_dreamstoreality-sony-sonyresearchindia-activity-6869484493208608768-_Ih0" target="_blank">Sony's Dream to Reality Contest</a>.<br> 
-                You may see my Pen-Testing activity on <a href="https://www.hackthebox.eu/profile/415817" target="_blank">Pro-Hacker@HackTheBox</a> and <a href="https://tryhackme.com/p/sp00fexpl01t">WIZARD(0xA)@TryHackMe</a>.<br>
-                You may see all my certificates in my <a href="https://www.linkedin.com/in/harshitruwali/" target="_blank">Linkedin proflie</a>. <br>
-                Download my <a href="resources/Resume-Harshit-Ruwali.pdf" target="_blank" download="Resume-Harshit-Ruwali.pdf" target="_blank">Resume</a>.<br>
-                Download my <a href="resources/Harshit Ruwali (325A6F7A) – Public.asc" target="_blank" download="Harshit Ruwali (325A6F7A) – Public.asc">Public GPG Key</a>.
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
 
-            </p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="profile-image-container">
+                            <img alt="Harshit Ruwali" class="profile-image" src="img/pic01.jpg">
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="hero-text">
+                        <h1 class="hero-name">Harshit Ruwali</h1>
+                        <h2 class="hero-alias">a.k.a. <span class="highlight">sp00fexpl01t</span></h2>
+                        <div class="hero-description">
+                            <span class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <div class="hero-badges">
+                            <span class="badge badge-primary">Backend Engineering Expert</span>
+                            <span class="badge badge-success">DevOps & Infrastructure</span>
+                            <span class="badge badge-info">ETL & Data Pipelines</span>
+                            <span class="badge badge-warning">AWS Cloud Architect</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/harshitruwali" title="GitHub" target="_blank" class="social-link">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/harshitruwali/" title="LinkedIn" target="_blank" class="social-link">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://stackoverflow.com/users/12245463/harshit-ruwali" title="Stack Overflow" target="_blank" class="social-link">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                            <a href="https://www.hackthebox.eu/profile/415817" title="HackTheBox" target="_blank" class="social-link">
+                                <i class="fa fa-cube"></i>
+                            </a>
+                            <a href="https://tryhackme.com/p/sp00fexpl01t" title="TryHackMe" target="_blank" class="social-link">
+                                <i class="fa fa-shield"></i>
+                            </a>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="resources/Resume-Harshit-Ruwali.pdf" target="_blank" class="btn btn-primary btn-lg">
+                                <i class="fa fa-download"></i> Download Resume
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg" data-scroll="contact">
+                                <i class="fa fa-envelope"></i> Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="scroll-indicator" data-scroll="about">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <section class="colorlib-about" data-section="about" id="about">
+    <!-- About Section -->
+    <section id="about" class="section-padding">
         <div class="container">
             <div class="row">
-                <script type="text/javascript">
-                    var domains = ["Deep Learning", "iOS Apps", "Course Solutions", "Competitive Coding"];
-                    var icons = ["university", "tablet", "key", "code"];
-                    var urls = ["deep-learning.html", "ios.html", "course-solutions.html", "competitive-coding.html"];
-                    var ids = [3, 4, 2, 1];
-
-                    for (let i = 0; i < domains.length; i++) {
-
-                        var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
-
-                        document.write(
-                            '<div class="col-sm-3 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                            <a href="' + urls[i] + '" target="_blank">\
-                            <div class="services color-' + ids[i] + '">\
-                            <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
-                            <h3>' + domains[i] + '</h3>\
-                            </div>\
-                            </a>\
-                            </div>'
-                            );
-                    }
-                </script>
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+                    <div class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Passionate technologist bridging security and innovation
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="about-content">
+                        <p class="lead">
+                            Backend Engineer at BHIVE Workspace specializing in building scalable <strong>data analytics systems</strong>, 
+                            <strong>ETL pipelines</strong>, and <strong>microservices architecture</strong>. Computer Science graduate from VIT Bhopal (2019-2023) 
+                            with expertise in <strong>DevOps</strong>, <strong>cloud infrastructure</strong>, and <strong>backend engineering</strong>.
+                        </p>
+                        <p>
+                            My professional journey focuses on creating robust backend systems, optimizing data pipelines, and implementing 
+                            DevOps best practices. I specialize in Python/FastAPI development, AWS cloud services, and building 
+                            in-house analytics platforms that drive business intelligence and decision-making.
+                        </p>
+                        <div class="achievement-highlight">
+                            <i class="fa fa-server"></i>
+                            <span>Backend Engineering Expert | DevOps Specialist | ETL & Data Pipeline Developer</span>
+                        </div>
+                        <div class="quick-links">
+                            <a href="https://www.hackthebox.eu/profile/415817" target="_blank" class="quick-link">
+                                <i class="fa fa-cube"></i> Pro-Hacker@HackTheBox (Rank 552)
+                            </a>
+                            <a href="https://stackoverflow.com/users/12245463/harshit-ruwali" target="_blank" class="quick-link">
+                                <i class="fa fa-stack-overflow"></i> 1K+ StackOverflow Reputation
+                            </a>
+                            <a href="https://bhiveworkspace.com/" target="_blank" class="quick-link">
+                                <i class="fa fa-building"></i> Current: Backend Engineer @ BHIVE
+                            </a>
+                            <a href="resources/Harshit Ruwali (325A6F7A) – Public.asc" target="_blank" class="quick-link">
+                                <i class="fa fa-key"></i> GPG Public Key
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="25">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Years Professional Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="12">0</div>
+                            <div class="stat-label">Technologies Mastered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-label">Security Challenges Solved</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="colorlib-skills" data-section="skills" id="skills">
-        <div class="colorlib-narrow-content">
+    <!-- Services/Domains Section -->
+    <section class="domains-section">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    <h3>My Skills</h3>
-                    <hr>
-                </div>
-            </div>
-            <p class="animate-box" data-animate-effect="fadeInLeft">Few of the skills that I consider myself
-            acquainted with, to serve the given opportunity are showcased here.</p>
-            <div class="container">
-                <div class="row">
-                    <script type="text/javascript">
-                        var skills = ["Deep Learning", "Pen Testing", "Full-Stack", " iOS Developement", ];
-                        var value = [90, 90, 90, 80];
-
-                        for (let i = 0; i < skills.length; i++) {
-                            var dir = (i % 2 == 0) ? "Right" : "Left";
-                            document.write(
-                                '<div class="col-md-6 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                                <br>\
-                                <div class="progress-wrap">\
-                                <h3>' + skills[i] + '</h3>\
-                                <div class="progress">\
-                                <div class="progress-bar color-' + (i + 1) +
-                                '" role="progressbar" aria-valuenow="' + value[i] +
-                                '" aria-valuemin="0" aria-valuemax="100" style="width:' + value[i] + '%">\
-                                <span>' + value[i] + '%</span>\
-                                </div>\
-                                </div>\
-                                </div>\
-                                </div>');
-                        }
-
-                    </script>
-                </div>
-            </div>
-        </section>
-
-        <section class="colorlib-experience" data-section="experience" id="experience">
-            <div class="colorlib-narrow-content">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                        <h3>Work Experience</h3>
-                        <hr>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="timeline-centered">
-                                <script type="text/javascript">
-                                    var timeSpan = ["Sept 2022 - Current","May 2022 - Sep 2022", "June 2021 - July 2021", "July 2020 - August 2020", "May 2020 - August 2020"];
-
-                                    var AT = ["itilite", "plypicker", "Power2Create", "Quora", "Workknot"];
-                                    var internType = ["Backend Developer Intern","DevOps Engineer Intern" ,"Penetration Tester & Security Specialist", "Technical Writer", "Web Developer & AI Developer"];
-
-                                    var descriptions = ["My work is to develop new features for our mobile app and maintain the existing ones. Also reducted the package time to 30 sec for large pages. Tech Stack: NodeJS, MySQL, AWS Lambda.", "Set up and monitored servers for the company. Set up pipelines for the web using Github Actions, AWS Code Pipeline and then Deploying them to ec2 instances via Code Deploy which are under a load-balancer and auto-sacled as needed.Set up and monitored servers for the company. Set up pipelines for the web using Github Actions, AWS Code Pipeline and then Deploying them to ec2 instances via Code Deploy which are under a load-balancer and auto-sacled as needed. Skills: Continuous Integration and Continuous Delivery (CI/CD) · Pipelines · DevOps · Microsoft Azure · Amazon Web Services (AWS)", "My Work: Black Box Penetration Testing, API Penetration Testing, Secure Code Review", "Answers about the Technical questions related to Deep Learning, iOS, computer software in my free time.", "Modified the working algorithm and build the server side and backend of the web-app. And updates when necessary."];
-                                    var urls = ["https://www.itilite.com/", "https://plypicker.com","https://www.power2create.in/", "https://www.quora.com/profile/Harshit-Ruwali",
-                                        "https://github.com/WorkKnot/"
-                                    ];
-
-                                    var iclass = ["code", "code", "code", "pencil", "code"];
-
-                                    var color = [5, 1, 2];
-                                    for (let i = 0; i < AT.length; i++) {
-                                        var dir = (i % 2 == 0) ? "Right" : "Left";
-                                        document.write(
-                                            '<article class="timeline-entry animate-box" data-animate-effect="fadeIn' +
-                                            dir + '">\
-                                            <div class="timeline-entry-inner">\
-                                            <div class="timeline-icon color-' + color[i] + '">\
-                                            <i class="fa fa-' + iclass[i] + '"></i>\
-                                            </div>\
-                                            <div class="timeline-label">\
-                                            <h2><a href="#" target="_blank">' + AT[i] + '</a> <span>' + timeSpan[i] + '</span></h2>\
-                                            <p><strong><a href="' + urls[i] + '" target="_blank">' + internType[i] + '</a></strong>\
-                                            <br> ' + descriptions[i] + '</p>\
-                                            <p></p>\
-                                            </div>\
-                                            </div>\
-                                            </article>');
-                                    }
-
-                                </script>
-                                <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                    <div class="timeline-entry-inner">
-                                        <div class="timeline-icon color-3">
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                </section>
-
-                <section class="colorlib-project" data-section="project" id="project">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <h3>Projects</h3>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <script type="text/javascript">
-                                    var domains = [
-                                    "Personalized Voice Assistant",
-                                    "Plant Disease Detection",
-                                    "Covid-19 Detection",    
-                                    "Traffic Sign Recognition",
-                                    "Flash Chat",
-                                    "Voice Assistant",
-                                    "A real time face recognition system",
-                                    "Recommendation Engine",
-                                    "H4X0R News"
-                                    ];
-                                    var ppDomains = [
-                                        "A Single Voice Assistant for Multiple users. With personalised results for each user.<br>\
-                                        Accuracy = 98% for 3 users for 10 mins of data and trained for 10 epochs.<br>\
-                                        Project selected for finals in Sony's Dream to Reality Contest.",
-                                        "Plant Disease Detection project is cross platform app and web to detect the diseases in the plants by scanning the images of the leaves and then passing to through the neural network to detect wether the plant is infected or not.",
-                                        "A Deep-Learning Project using CNN and transfer learning with the VGG16 model to detect COVID-19 in the person with having accuracy of 97.50% based on the x-ray of the chest of the person.",
-                                        "Recognises 43 different traffic signs in the road. A convolutional neural network application. And have accuracy of 94.45%.",
-                                        "An iOS one is to one chatting application using the Google Firebase as the main database.",
-                                        "An application that functions on your voice input and does most of the things like getting news, telling the weather, plays a video from YouTube and mainly does a Google Search.",
-                                        "A real time face recognition system developed in Python using OpenCV and NumPy",
-                                        "A machine learning model which recommends the people products or give recommendations based on what others have bought while buying similar products.",
-                                        "An iOS/ MacOS/ iPadOS news app which fetch current trending tech news from web, made using the whole new SwiftUI.Since the app uses the UIKIT, you can literally build and run the app on your iPhone or Mac or iPad, just by checking up a couple of check boxes."
-                                        ];
-
-                                    var urls = [
-                                    "https://github.com/SkyDocs/personalised-voice-assistant",
-                                    "https://github.com/SkyDocs/Plant-Disease-Detection",
-                                    "https://github.com/HarshitRuwali/COVID-19_Detection",
-                                    "https://github.com/HarshitRuwali/Traffic-Sign-Recognition",
-                                    "https://github.com/HarshitRuwali/Flash-Chat-iOS13",
-                                    "https://github.com/HarshitRuwali/Voice_Assistant/tree/v2.0",
-                                    "https://github.com/HarshitRuwali/Face_Recognition",
-                                    "https://github.com/HarshitRuwali/Recommendation_Engine",
-                                    "https://github.com/HarshitRuwali/H4X0R-News"
-                                    ];
-                                var icons = ["microphone", "leaf", "ambulance", "car", "comment", "microphone", "camera", "user", "line-chart"]; 
-                                for (let i = 0; i < domains.length; i++) {
-                                    var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
-                                    document.write(
-                                        '<div class="col-md-12 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                                        <a href="' + urls[i] + '" target="_blank">\
-                                        <div class="services color-' + (i + 1) + '">\
-                                        <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
-                                        <h3>' + domains[i] + '</h3>\
-                                        <p>' + ppDomains[i] + '</p>\
-                                        </div>\
-                                        </a>\
-                                        </div>'
-                                    );
-                                }
-                        </script>
+                <div class="col-12">
+                    <h2 class="section-title light" data-aos="fade-up">Expertise Areas</h2>
+                    <div class="section-subtitle light" data-aos="fade-up" data-aos-delay="100">
+                        Specialized domains where I create impactful solutions
                     </div>
                 </div>
             </div>
-        </section>
-
-        <div class="footer">
-            <div class="second">
-                <div class="fixed-content">
-                    <h2>Contact Me</h2>
-                </div>
-            </div>
-            <div class="fixed-content">
-                <div class="icon-row blue">
-                    <a href="https://t.me/harshitruwali" title="Message me on Telegram!" target="_blank"><i class="fa fa-telegram"></i></a>
-                    <a href="mailto:ruwaliharshit@gmail.com" title="Mail me!" target="_blank"><i class="fa fa-envelope"></i></a>
-                    <a href="https://twitter.com/harshitruwali" title="Follow me on Twitter!" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/harshitruwali/" title="Connect with me on Linkedin!" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <i class="fa fa-chevron-up black" style="color:#000;"
-                onclick="window.scroll({  top: 0,  left: 0,  behavior: 'smooth'});"></i>
+            <div class="row" id="domains-container">
+                <!-- Domains will be dynamically inserted here -->
             </div>
         </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+                    <div class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Technologies and tools I use to build amazing solutions
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="skills-category">
+                        <h4><i class="fa fa-server"></i> Backend & APIs</h4>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python & FastAPI</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Microservices Architecture</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>REST APIs & GraphQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="skills-category">
+                        <h4><i class="fa fa-cloud"></i> DevOps & Infrastructure</h4>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AWS Services & CDK</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Docker & Kubernetes</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CI/CD Pipelines</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="400">
+                    <div class="skills-category">
+                        <h4><i class="fa fa-database"></i> Data Engineering & ETL</h4>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PostgreSQL & MongoDB</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Kafka & Event Streaming</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Data Pipelines & ETL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500">
+                    <div class="skills-category">
+                        <h4><i class="fa fa-cogs"></i> Tools & Technologies</h4>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Redis & Caching</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Monitoring & Observability</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Machine Learning</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title light" data-aos="fade-up">Work Experience</h2>
+                    <div class="section-subtitle light" data-aos="fade-up" data-aos-delay="100">
+                        Professional journey and key contributions
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline" id="experience-timeline">
+                        <!-- Experience items will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+                    <div class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Innovative solutions that showcase my technical expertise
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="projects-container">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="600">
+                    <a href="https://github.com/harshitruwali" target="_blank" class="btn btn-outline-primary btn-lg">
+                        <i class="fa fa-github"></i> View All Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title light" data-aos="fade-up">Latest from My Blog</h2>
+                    <div class="section-subtitle light" data-aos="fade-up" data-aos-delay="100">
+                        Tech insights, career reflections, and industry thoughts
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-header">
+                            <span class="blog-date">13 Oct 2025</span>
+                            <span class="blog-readtime">4 min read</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="https://blog.sp00fexpl01t.rocks/corporate-journey-in-tech/" target="_blank">
+                                My Life in the Corporate World So Far
+                            </a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            From a nervous intern staring at Node.js code to building scalable systems and data pipelines — it's been one wild ride. Here's my unfiltered take on the corporate world, the growth, the chaos, and the lessons learned along the way.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Career</span>
+                            <span class="tag">Corporate Life</span>
+                            <span class="tag">Tech Industry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-card">
+                        <div class="blog-header">
+                            <span class="blog-date">07 Sep 2024</span>
+                            <span class="blog-readtime">5 min read</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="https://blog.sp00fexpl01t.rocks/clean-code-bullshit/" target="_blank">
+                                Clean Code Bullshit?
+                            </a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            What is all this about clean code that we all hear? A critical look at Robert C. Martin's Clean Code principles and whether they're actually practical in real-world development scenarios.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Clean Code</span>
+                            <span class="tag">Software Engineering</span>
+                            <span class="tag">Best Practices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-card">
+                        <div class="blog-header">
+                            <span class="blog-date">22 Jun 2024</span>
+                            <span class="blog-readtime">6 min read</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="https://blog.sp00fexpl01t.rocks/devops-roadmap/" target="_blank">
+                                DevOps Roadmap
+                            </a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            After working in the Software industry for more than 2 years, I've learned the importance of understanding how applications are hosted. Here's a comprehensive roadmap for DevOps knowledge.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="blog-card">
+                        <div class="blog-header">
+                            <span class="blog-date">05 Aug 2024</span>
+                            <span class="blog-readtime">5 min read</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="https://blog.sp00fexpl01t.rocks/a-take-on-life/" target="_blank">
+                                A Take on Life...
+                            </a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Living in my early 20s, working in a start-up as a Software Engineer, leaving less time to do all the things you dreamed of. Reflections on work-life balance and pursuing dreams.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Life</span>
+                            <span class="tag">Work-Life Balance</span>
+                            <span class="tag">Startup Life</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="blog-card">
+                        <div class="blog-header">
+                            <span class="blog-date">01 Jun 2024</span>
+                            <span class="blog-readtime">3 min read</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="https://blog.sp00fexpl01t.rocks/raivo-just-went-rouge/" target="_blank">
+                                Raivo Just Went Rogue
+                            </a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Raivo, a famous open-source 2FA manager for iOS, just added a paywall to its application, and things are just messed up. The app is crashing and blocking users from their accounts.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Security</span>
+                            <span class="tag">2FA</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="blog-card">
+                        <div class="blog-header">
+                            <span class="blog-date">29 May 2024</span>
+                            <span class="blog-readtime">3 min read</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="https://blog.sp00fexpl01t.rocks/obsf4-proxy-for-tor/" target="_blank">
+                                Configuring obsf4 Proxy for Tor
+                            </a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            If you've used Tor, you've probably heard about "bridges", "obsf4", "exit nodes". Let's have a deeper dive into the obsf4 proxy configuration for enhanced privacy and security.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Privacy</span>
+                            <span class="tag">Tor</span>
+                            <span class="tag">Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="800">
+                    <a href="https://blog.sp00fexpl01t.rocks/" target="_blank" class="btn btn-outline-light btn-lg">
+                        <i class="fa fa-external-link"></i> Read All Articles on My Blog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title light" data-aos="fade-up">Get In Touch</h2>
+                    <div class="section-subtitle light" data-aos="fade-up" data-aos-delay="100">
+                        Let's collaborate on something amazing
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-grid" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-item">
+                            <a href="mailto:ruwaliharshit@gmail.com" class="contact-link">
+                                <i class="fa fa-envelope"></i>
+                                <span>Email</span>
+                                <small>ruwaliharshit@gmail.com</small>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://t.me/harshitruwali" target="_blank" class="contact-link">
+                                <i class="fa fa-telegram"></i>
+                                <span>Telegram</span>
+                                <small>@harshitruwali</small>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://www.linkedin.com/in/harshitruwali/" target="_blank" class="contact-link">
+                                <i class="fa fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                                <small>Connect professionally</small>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://twitter.com/harshitruwali" target="_blank" class="contact-link">
+                                <i class="fa fa-twitter"></i>
+                                <span>X/Twitter</span>
+                                <small>@harshitruwali</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="footer-text">
+                        &copy; 2024 Harshit Ruwali (sp00fexpl01t). Crafted with <i class="fa fa-heart"></i> and lots of <i class="fa fa-coffee"></i>
+                    </p>
+                    <div class="footer-links">
+                        <a href="resources/Resume-Harshit-Ruwali.pdf" target="_blank">Resume</a>
+                        <span>•</span>
+                        <a href="resources/Harshit Ruwali (325A6F7A) – Public.asc" target="_blank">GPG Key</a>
+                        <span>•</span>
+                        <a href="https://github.com/harshitruwali" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-to-top" id="scrollToTop">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.countTo.js"></script>
-    <script src="js/services.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Particles.js configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#64ffda' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#64ffda',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Typing animation
+        const typingTexts = [
+            'Backend Engineer @ BHIVE Workspace',
+            'DevOps & Infrastructure Specialist',
+            'ETL & Data Pipeline Developer',
+            'Python & FastAPI Expert', 
+            'Microservices Architecture Designer',
+            'AWS Cloud Solutions Engineer'
+        ];
+        
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.querySelector('.typing-text');
+        
+        function typeText() {
+            const currentText = typingTexts[textIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            let typeSpeed = isDeleting ? 50 : 100;
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % typingTexts.length;
+                typeSpeed = 500;
+            }
+            
+            setTimeout(typeText, typeSpeed);
+        }
+        
+        // Start typing animation when page loads
+        document.addEventListener('DOMContentLoaded', typeText);
+
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('#navbar').addClass('scrolled');
+            } else {
+                $('#navbar').removeClass('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        $('a[data-scroll]').click(function(e) {
+            e.preventDefault();
+            const target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 70
+            }, 800);
+        });
+
+        // Counter animation
+        function animateCounter() {
+            $('.stat-number').each(function() {
+                const $this = $(this);
+                const countTo = $this.attr('data-count');
+                
+                $({ countNum: 0 }).animate({
+                    countNum: countTo
+                }, {
+                    duration: 2000,
+                    easing: 'linear',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+                });
+            });
+        }
+
+        // Skill bars animation
+        function animateSkillBars() {
+            $('.skill-progress').each(function() {
+                const skillLevel = $(this).attr('data-skill');
+                $(this).animate({
+                    width: skillLevel + '%'
+                }, 1500);
+            });
+        }
+
+        // Waypoint triggers
+        $('.stats-grid').waypoint(function() {
+            animateCounter();
+        }, { offset: '80%' });
+
+        $('.skills-category').waypoint(function() {
+            animateSkillBars();
+        }, { offset: '80%' });
+
+        // Dynamic domains generation
+        const domains = [
+            {
+                title: "Backend Engineering",
+                icon: "server",
+                url: "#",
+                description: "Scalable microservices and API development with Python & FastAPI"
+            },
+            {
+                title: "DevOps & Cloud", 
+                icon: "cloud",
+                url: "#",
+                description: "CI/CD pipelines, AWS infrastructure, and containerized deployments"
+            },
+            {
+                title: "ETL & Data Pipelines",
+                icon: "database",
+                url: "#", 
+                description: "In-house data analytics systems and real-time processing"
+            },
+            {
+                title: "Deep Learning",
+                icon: "lightbulb-o",
+                url: "deep-learning.html",
+                description: "Neural networks and AI model development"
+            }
+        ];
+
+        // Generate domains HTML
+        function generateDomains() {
+            const container = document.getElementById('domains-container');
+            domains.forEach((domain, index) => {
+                const delay = (index + 1) * 100;
+                const domainHTML = `
+                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${delay}">
+                        <a href="${domain.url}" class="domain-card">
+                            <div class="domain-icon">
+                                <i class="fa fa-${domain.icon}"></i>
+                            </div>
+                            <h4>${domain.title}</h4>
+                            <p>${domain.description}</p>
+                            <div class="domain-arrow">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                container.innerHTML += domainHTML;
+            });
+        }
+
+        // Dynamic experience generation
+        const experiences = [
+            {
+                company: "BHIVE Workspace",
+                position: "Backend Engineer",
+                duration: "Jun 2024 – Present",
+                location: "Bangalore, India",
+                description: "Spearheading development of in-house data analytics system for real-time business intelligence. Optimized backend processes and SQL queries, improving performance by 40%. Built comprehensive data warehousing solutions for enterprise-scale analytics.",
+                highlights: [
+                    "Built REST APIs using FastAPI, SQLAlchemy, and PostgreSQL",
+                    "Automated cron-based sync jobs for HubSpot, Exotel integrations",
+                    "Enhanced observability with Loki, OTEL, and Grafana monitoring",
+                    "Designed and implemented data warehousing architecture with Snowflake",
+                    "Developed ETL pipelines for multi-source data aggregation and transformation",
+                    "Optimized data models and queries for large-scale analytics workloads"
+                ],
+                technologies: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Loki", "OTEL", "Grafana", "Snowflake", "Data Warehousing", "ETL Pipelines"],
+                icon: "code",
+                url: "https://bhiveworkspace.com/",
+                current: true
+            },
+            {
+                company: "itilite", 
+                position: "Backend Engineer (Intern → Full-time)",
+                duration: "Sept 2022 - Jun 2024",
+                location: "Bangalore, India",
+                description: "Contributed to serverless microservices architecture transformation, integrating Priceline vendors and optimizing flight booking workflows. Reduced packaging time from 30 to 5 seconds. Transitioned from intern to full-time role.",
+                highlights: [
+                    "Implemented flight rescheduling and cancellation workflows",
+                    "Built robust de-duplication logic for hotel booking flows",
+                    "Contributed to mobile backend with 4 new features (30% user engagement increase)",
+                    "Overcame AWS API Gateway 29s timeout using Redis caching",
+                    "Directed 3 POCs including AWS CDK infrastructure implementations",
+                    "Promoted from intern to full-time Backend Engineer"
+                ],
+                technologies: ["Python", "FastAPI", "Docker", "MongoDB", "Kafka", "AWS CDK", "AWS StepFunctions", "AWS Lambda", "JavaScript", "NodeJS", "MySQL", "Redis"],
+                icon: "cloud",
+                url: "https://www.itilite.com/"
+            },
+            {
+                company: "Plypicker",
+                position: "DevOps Engineer Intern", 
+                duration: "May 2022 - Sept 2022",
+                description: "Set up CI/CD pipelines using GitHub Actions and AWS CodePipeline. Deployed solutions with load balancing and auto-scaling capabilities.",
+                highlights: [
+                    "Built CI/CD pipelines with GitHub Actions and AWS CodePipeline",
+                    "Deployed to EC2 instances via CodeDeploy with load balancing",
+                    "Implemented Bastion Host security across 3 subnets",
+                    "Hosted Zabbix monitoring with 6 server slave connections"
+                ],
+                technologies: ["AWS", "CI/CD", "GitHub Actions", "EC2", "CodeDeploy", "Zabbix", "Load Balancing"],
+                icon: "cogs",
+                url: "https://plypicker.com"
+            }
+        ];
+
+        // Generate experience timeline
+        function generateExperience() {
+            const container = document.getElementById('experience-timeline');
+            experiences.forEach((exp, index) => {
+                const side = index % 2 === 0 ? 'left' : 'right';
+                const delay = (index + 1) * 150;
+                const techBadges = exp.technologies.map(tech => `<span class="tech-badge">${tech}</span>`).join('');
+                const currentBadge = exp.current ? '<span class="current-role">Current</span>' : '';
+                const location = exp.location ? `<span class="timeline-location">${exp.location}</span>` : '';
+                
+                // Generate highlights if available
+                const highlights = exp.highlights ? 
+                    `<ul class="experience-highlights">
+                        ${exp.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+                    </ul>` : '';
+                
+                const expHTML = `
+                    <div class="timeline-item ${side}" data-aos="fade-${side === 'left' ? 'right' : 'left'}" data-aos-delay="${delay}">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-${exp.icon}"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h4><a href="${exp.url}" target="_blank">${exp.company}</a></h4>
+                                ${currentBadge}
+                            </div>
+                            <h5>${exp.position}</h5>
+                            <span class="timeline-date">${exp.duration}</span>
+                            ${location}
+                            <p class="experience-description">${exp.description}</p>
+                            ${highlights}
+                            <div class="tech-stack">
+                                ${techBadges}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += expHTML;
+            });
+        }
+
+        // Featured projects data
+        const projects = [
+            {
+                title: "SalesSync Analytics Platform",
+                description: "Enterprise-grade ETL system syncing sales data from multiple sources (HubSpot, Exotel) with real-time visualization and business intelligence dashboards.",
+                technologies: ["Python", "FastAPI", "PostgreSQL", "Apache Superset", "ETL", "HubSpot API"],
+                icon: "chart-line",
+                url: "#",
+                featured: true,
+                category: "ETL/Analytics"
+            },
+            {
+                title: "Call Response Analytics Engine",
+                description: "Data pipeline system tracking call patterns and response times with automated alerting for sales optimization and lead management efficiency.",
+                technologies: ["Python", "SQL", "Exotel API", "Data Analytics", "Real-time Processing"],
+                icon: "phone",
+                url: "#",
+                featured: true,
+                category: "ETL/Analytics"
+            },
+            {
+                title: "Microservices Flight Management",
+                description: "Serverless architecture for flight booking workflows with Priceline integration, featuring robust de-duplication and optimization algorithms.",
+                technologies: ["Python", "FastAPI", "AWS Lambda", "Microservices", "Event-driven"],
+                icon: "plane",
+                url: "#",
+                category: "Backend"
+            },
+            {
+                title: "Infrastructure Monitoring Stack",
+                description: "Comprehensive DevOps monitoring solution with Zabbix, SigNoz, and Grafana for distributed systems observability and alerting.",
+                technologies: ["Zabbix", "SigNoz", "Grafana", "Docker", "DevOps", "Monitoring"],
+                icon: "eye",
+                url: "#",
+                category: "DevOps"
+            },
+            {
+                title: "CI/CD Pipeline Architecture",
+                description: "Enterprise CI/CD system with GitHub Actions, AWS CodePipeline, and automated deployments across multiple environments with auto-scaling.",
+                technologies: ["GitHub Actions", "AWS CodePipeline", "EC2", "Load Balancing", "Auto-scaling"],
+                icon: "cogs",
+                url: "#",
+                category: "DevOps"
+            },
+            {
+                title: "HubSpot Data Integration",
+                description: "ETL system for HubSpot email-deal associations with retry logic, constraint validation, and real-time data synchronization.",
+                technologies: ["SQLAlchemy ORM", "FastAPI", "HubSpot API", "ETL", "Data Validation"],
+                icon: "envelope",
+                url: "#",
+                category: "ETL/Analytics"
+            },
+            {
+                title: "Personalised Voice Assistant",
+                description: "AI system recognizing individual speakers with 98% accuracy, featuring advanced audio processing and machine learning algorithms.",
+                technologies: ["TensorFlow", "Keras", "Python", "PyAudio", "Flask", "Audio Processing"],
+                icon: "microphone",
+                url: "https://github.com/SkyDocs/personalised-voice-assistant",
+                category: "AI/ML",
+                duration: "Aug 2020 – Jan 2022"
+            },
+            {
+                title: "Speaker Identification System",
+                description: "1D CNN architecture with Fast Fourier Transform for voice analysis, achieving 98% accuracy in speaker recognition.",
+                technologies: ["TensorFlow", "CNN", "FFT", "Python", "Audio Processing"],
+                icon: "waveform",
+                url: "#",
+                category: "AI/ML",
+                duration: "Aug 2020 - Mar 2021"
+            },
+            {
+                title: "Redis Caching Optimization",
+                description: "High-performance caching solution bypassing AWS API Gateway limitations with intelligent response chunking and delivery optimization.",
+                technologies: ["Redis", "AWS API Gateway", "Caching", "Performance Optimization"],
+                icon: "tachometer",
+                url: "#",
+                category: "Backend"
+            }
+        ];
+
+        // Generate projects
+        function generateProjects() {
+            const container = document.getElementById('projects-container');
+            projects.slice(0, 9).forEach((project, index) => {
+                const delay = (index + 1) * 100;
+                const techBadges = project.technologies.map(tech => `<span class="tech-badge">${tech}</span>`).join('');
+                const featuredClass = project.featured ? 'featured' : '';
+                const categoryBadge = `<span class="category-badge">${project.category}</span>`;
+                const durationBadge = project.duration ? `<span class="duration-badge">${project.duration}</span>` : '';
+                
+                const projectHTML = `
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${delay}">
+                        <div class="project-card ${featuredClass}">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fa fa-${project.icon}"></i>
+                                </div>
+                                <div class="project-badges">
+                                    ${categoryBadge}
+                                    ${durationBadge}
+                                </div>
+                            </div>
+                            <h4>${project.title}</h4>
+                            <p>${project.description}</p>
+                            <div class="tech-stack">
+                                ${techBadges}
+                            </div>
+                            ${project.url !== '#' ? 
+                                `<a href="${project.url}" target="_blank" class="project-link">
+                                    <i class="fa fa-external-link"></i> View Project
+                                </a>` : 
+                                `<span class="project-private">
+                                    <i class="fa fa-lock"></i> Private/Internal Project
+                                </span>`
+                            }
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += projectHTML;
+            });
+        }
+
+        // Scroll to top functionality
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#scrollToTop').addClass('show');
+            } else {
+                $('#scrollToTop').removeClass('show');
+            }
+        });
+
+        $('#scrollToTop').click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+        });
+
+        // Initialize dynamic content
+        $(document).ready(function() {
+            // Hide loading screen
+            setTimeout(function() {
+                $('#loading').addClass('hidden');
+            }, 1500);
+            
+            generateDomains();
+            generateExperience(); 
+            generateProjects();
+        });
+    </script>
 
      <div class="alert text-center cookiealert tracker" role="alert">
         <b>

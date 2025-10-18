@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Harshit Ruwali's Course Solutions</title>
-    <meta charset="utf-8" name = "description" content="Harshit Ruwali's Solutions to Coursera courses.">
+    <title>Harshit Ruwali | Learning & Certifications</title>
+    <meta charset="utf-8" name = "description" content="Harshit Ruwali's continuous learning journey, course completions, and professional certifications in backend development and DevOps.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/course-solutions/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/course-solutions/favicon-32x32.png">
@@ -20,140 +20,430 @@
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <noscript>
-        <h3 id="javascript-disabled">JavaScript is disabled! Enable JavaScript to see the complete page.</h3>
-        <style>
-            #javascript-disabled {
-                text-align: center;
-                padding: 5px;
-                color: #888;
-            }
-            #about {display:none;}
-            #project {display:none;}
-            #skills {display:none;}
-            #experience {display:none;}
-            #project {display:none;}
-        </style>
-    </noscript>
-    <div class="header">
-        <div class="fixed-content">
-            <a href="index.html"> <img alt="Harshit Ruwali" class="port" src="img/pic01.jpg"> </a>
-            <a href="index.html"> <h1>Harshit Ruwali</h1> </a>
-            <h5>a.k.a. sp00fexpl01t<h5>
-            <p style="color:#fff;">Sony's Dreams To Reality Finalist | Deep Learning | Pen-Tester(Pro-Hacker@HackTheBox) | Full-Stack</p>
-            <div class="icon-row">
-                <a href="https://github.com/harshitruwali" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/harshitruwali/" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://stackoverflow.com/users/12245463/harshit-ruwali" title="Stack Overflow" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-                <a href="https://www.quora.com/profile/Harshit-Ruwali" title="Quora" target="_blank"><i class="fa fa-quora"></i></a>
-            </div>
-        </div>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
     </div>
 
-        <div class="second">
-            <div class="fixed-content">
-                <h2>Solutions</h2>
-                <p>Here are solutions to the Online Courses.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">sp00fexpl01t</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deep-learning.html">Deep Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="course-solutions.html">Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <section class="colorlib-experience" data-section="experience">
-            <div class="colorlib-narrow-content">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                        <h3>Course Solutions</h3>
-                        <hr>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header Section -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        <span class="glow-text">Continuous Learning</span> & <span class="glow-text">Growth</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Professional development through structured learning and certifications
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat" data-aos="fade-up" data-aos-delay="100">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Courses Completed</span>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Learning Hours</span>
+                        </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="timeline-centered">
-                                <script type="text/javascript">
-                                    var timeSpan = ["June 2020 - July 2020", "June 2020 - June 2020", "May 2020 - May 202", "April 2020 - April 2020", "April 2020 - April 2020"];
-                                    var AT = ["Coursera - HTML, CSS and Javascript for Web Developers" ,"Coursera - Deep Learning in Computer Vision", "Coursera - TensorFlow Data and Deployment Specialization", "Coursera - TensorFlow in Practice Specialization", "Coursera - Deep Learning Specialization"];
-                                    var internType = ["See the Solutions", "See the Solutions", "See the Solutions", "See the Solutions", "See the Solutions"];
+            </div>
+        </section>
 
-                                    var descriptions = [
-                                    "Coursera's HTML, CSS and Javascript for Web Developers",
-                                    "Coursera's Deep Learning in Computer Vision",
-                                    "Coursera's TensorFlow Data and Deployment course files.",
-                                    "Coursera's TensorFlow in Practice Specialization files.",
-                                    "Coursera's Deep Learning Specialisation programming files.",
-                                    ];
-                                    var iclass = ["code", "code", "code", "code", "code"]; 
-                                    var urls = ["https://github.com/HarshitRuwali/Coursera-HTML-CSS-and-Javascript-for-Web-Developers",
-                                    "https://github.com/HarshitRuwali/Coursera-Deep-Learning-in-Computer-Vision",
-                                    "https://github.com/HarshitRuwali/Coursera-TensorFlow-Data-and-Deployment-Specialization",
-                                    "https://github.com/HarshitRuwali/Coursera-TensorFlow-in-Practice-Specialization",
-                                    "https://github.com/HarshitRuwali/Coursera-Deep-Learning-Specialization"
-                                    ];
-                                    var color = [5, 1, 2];
-                                    for (let i = 0; i < AT.length; i++) {
-                                        var dir = (i % 2 == 0) ? "Right" : "Left";
-                                        document.write(
-                                            '<article class="timeline-entry animate-box" data-animate-effect="fadeIn' +
-                                            dir + '">\
-                                            <div class="timeline-entry-inner">\
-                                            <div class="timeline-icon color-' + color[i] + '">\
-                                            <i class="fa fa-' + iclass[i] + '"></i>\
-                                            </div>\
-                                            <div class="timeline-label">\
-                                            <h2><a href="' + urls[i] + '" target="_blank">' + AT[i] + '</a> <span>' + timeSpan[i] + '</span></h2>\
-                                            <p><strong><a href="' + urls[i] + '" target="_blank">' + internType[i] + '</a></strong>\
-                                            <br> ' + descriptions[i] + '</p>\
-                                            <p></p>\
-                                            </div>\
-                                            </div>\
-                                            </article>');
-                                    }
+        <!-- Learning Path Section -->
+        <section class="section" id="learning-path">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Learning & Certifications</h2>
+                <div class="learning-categories">
+                    <!-- Backend Development -->
+                    <div class="category-section" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="category-title">
+                            <i class="fa fa-server"></i>
+                            Backend Development & APIs
+                        </h3>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>Node.js Backend Development</h4>
+                                    <span class="course-provider">Coursera - Meta</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">Express.js</span>
+                                    <span class="skill-tag">RESTful APIs</span>
+                                    <span class="skill-tag">Authentication</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="#" class="btn btn-outline">Certificate</a>
+                                </div>
+                            </div>
 
-                                </script>
-                                <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                    <div class="timeline-entry-inner">
-                                        <div class="timeline-icon color-3">
-                                        </div>
-                                    </div>
-                                </article>
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>Database Design & Management</h4>
+                                    <span class="course-provider">MongoDB University</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">Data Modeling</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="#" class="btn btn-outline">Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Cloud -->
+                    <div class="category-section" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="category-title">
+                            <i class="fa fa-cloud"></i>
+                            DevOps & Cloud Technologies
+                        </h3>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>Docker & Containerization</h4>
+                                    <span class="course-provider">Docker Academy</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">Kubernetes</span>
+                                    <span class="skill-tag">Container Orchestration</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="#" class="btn btn-outline">Certificate</a>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>CI/CD Pipeline Development</h4>
+                                    <span class="course-provider">GitLab Learn</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">GitLab CI</span>
+                                    <span class="skill-tag">Jenkins</span>
+                                    <span class="skill-tag">Automation</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="#" class="btn btn-outline">Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="category-section" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="category-title">
+                            <i class="fa fa-brain"></i>
+                            Machine Learning & AI
+                        </h3>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>Deep Learning Specialization</h4>
+                                    <span class="course-provider">Coursera - deeplearning.ai</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">Neural Networks</span>
+                                    <span class="skill-tag">TensorFlow</span>
+                                    <span class="skill-tag">Computer Vision</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="https://github.com/HarshitRuwali/Coursera-Deep-Learning-Specialization" target="_blank" class="btn btn-outline">
+                                        <i class="fa fa-github"></i> Solutions
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>TensorFlow in Practice</h4>
+                                    <span class="course-provider">Coursera - deeplearning.ai</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">TensorFlow</span>
+                                    <span class="skill-tag">CNN</span>
+                                    <span class="skill-tag">NLP</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="https://github.com/HarshitRuwali/Coursera-TensorFlow-in-Practice-Specialization" target="_blank" class="btn btn-outline">
+                                        <i class="fa fa-github"></i> Solutions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="category-section" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="category-title">
+                            <i class="fa fa-code"></i>
+                            Web Development Foundation
+                        </h3>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>HTML, CSS & JavaScript for Web Developers</h4>
+                                    <span class="course-provider">Coursera - Johns Hopkins</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="https://github.com/HarshitRuwali/Coursera-HTML-CSS-and-Javascript-for-Web-Developers" target="_blank" class="btn btn-outline">
+                                        <i class="fa fa-github"></i> Solutions
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <h4>TensorFlow Data and Deployment</h4>
+                                    <span class="course-provider">Coursera - deeplearning.ai</span>
+                                </div>
+                                <div class="course-skills">
+                                    <span class="skill-tag">TensorFlow Lite</span>
+                                    <span class="skill-tag">TensorFlow.js</span>
+                                    <span class="skill-tag">Model Deployment</span>
+                                </div>
+                                <div class="course-link">
+                                    <a href="https://github.com/HarshitRuwali/Coursera-TensorFlow-Data-and-Deployment-Specialization" target="_blank" class="btn btn-outline">
+                                        <i class="fa fa-github"></i> Solutions
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-            </section>
-                
-            <div class="footer">
-            <div class="second">
-                <div class="fixed-content">
-                    <h2>Contact Me</h2>
-                </div>
             </div>
-            <div class="fixed-content">
-                <div class="icon-row blue">
-                    <a href="https://t.me/harshitruwali" title="Message me on Telegram!" target="_blank"><i class="fa fa-telegram"></i></a>
-                    <a href="mailto:ruwaliharshit@gmail.com" title="Mail me!" target="_blank"><i class="fa fa-envelope"></i></a>
-                    <a href="https://twitter.com/harshitruwali" title="Follow me on Twitter!" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/harshitruwali/" title="Connect with me on Linkedin!" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <i class="fa fa-chevron-up black" style="color:#000;"
-                onclick="window.scroll({  top: 0,  left: 0,  behavior: 'smooth'});"></i>
-            </div>
-        </div>
+        </section>
 
+        <!-- Skills Progress Section -->
+        <section class="section" id="learning-progress">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Learning Progress</h2>
+                <div class="progress-grid">
+                    <div class="progress-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Backend Development</h3>
+                        <div class="progress-item">
+                            <span>API Design & Development</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Database Management</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Server Architecture</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3>DevOps & Deployment</h3>
+                        <div class="progress-item">
+                            <span>Containerization</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>CI/CD Pipelines</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Cloud Platforms</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Data & Machine Learning</h3>
+                        <div class="progress-item">
+                            <span>Data Processing & ETL</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>ML Model Development</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="82%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Deep Learning</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-content" data-aos="fade-up">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-text">
+                        Interested in discussing learning paths, sharing knowledge, or collaboration opportunities?
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:harshit@harshitruwali.tech" class="contact-link" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fa fa-envelope"></i>
+                            <span>harshit@harshitruwali.tech</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harshitruwali/" target="_blank" class="contact-link" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fa fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/harshitruwali" target="_blank" class="contact-link" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fa fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                        <i class="fa fa-chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Particles
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#00ff9f" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#00ff9f",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Loading screen
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style.display = 'none';
+        });
+
+        // Progress bars animation
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            progressBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                bar.style.width = width;
+            });
+        }
+
+        // Trigger progress bars animation when section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target.id === 'learning-progress') {
+                    animateProgressBars();
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressSection = document.getElementById('learning-progress');
+            if (progressSection) {
+                observer.observe(progressSection);
+            }
+        });
+    </script>
+</body>
+</html>
     <script src="js/script.js"></script>
 
 </body>
